@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rio 200 Graus - AD2 Igor</title>
+		<base target="_blank" />
+		<link rel="stylesheet" type="text/css" href="Rio200graus.css" />
+	</head>
+	<body>
+		<header>
+			<address class="ender">
+				 Avenida Atacama, 200<br/>
+				 Tel: (21) 98765-4321<br/>
+				 <a href="mailto:contato@hotashell.com.br">
+				 contato@hotashell.com.br</a>
+			</address>
+		 	<img class="imgLogo" src="imagens/Rio200deitado.png"/><br/>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="Rio200graus2.html" target="_self">Inicial</a></li>
+				<li><a href="Tipos.html" target="_self">Tipos</a></li>
+				<li><a href="Estoque.html" target="_self">Estoque</a></li>
+				<li><a href="Cadastro.html" target="_self">Cadastro</a></li>
+				<li><a href="Compras.html" target="_self">Compras</a></li>
+			</ul>
+		</nav>
+		<section>
+			<h1>Tipos
+			<ol class="listaTipos">
+				<li><a target="_blank" href="javascript:abreFogao();">Fogão à gas GLP</a></li>
+				<li><a target="_blank" href="javascript:abreForno();">Forno</a></li>
+			</ol></h1>
+		</section>
+		<script type="text/javascript">
+				function abreFogao() {
+					var fogaoWindow = window.open("", "Fogao", "width=360,height=500");
+					fogaoWindow.document.write ("<html><head><title>Fogão</title><base target='_blank' /><link rel='stylesheet' type='text/css' href='Rio200graus.css' />	</head><body><div class='divPop'><h1>Fogão</h1></div><div><img src='imagens/FogaoBrastemp4b.jpg' class='imgPop'></div><div><ul><li>Brastemp 4 bocas - R$ 730,00</li><li>Electrolux 6 bocas - R$ 784,00</li><li>Brastemp 6 bocas - R$ 1350,00</li></ul></div><div class='divPop'><button type='button' onclick='window.close();'>Fechar</button></div><br><div>Foto meramente ilustrativa...</div></body></html>");
+					fogaoWindow.document.close()
+				}
+				function abreForno() {
+					var fornoWindow = window.open("", "Forno", "width=360,height=450");
+					fornoWindow.document.write ("<html>	<head><title>Forno</title><base target='_blank' /><link rel='stylesheet' type='text/css' href='Rio200graus.css' />	</head><body><div class='divPop'><h1>Forno</h1></div><div><img src='imagens/FornoEletPhilco46L.jpg' class='imgPop'></div><div><ul><li>Elétrico Philco 46L - R$ 319,00</li><li>À gás Itajobi 56L - R$ 563,00</li></ul></div><div class='divPop'><button type='button' onclick='window.close();'>Fechar</button></div><br><div>Foto meramente ilustrativa...</div></body></html>")
+					fornoWindow.document.close ()
+				}
+		</script>
+	</body>
+</html>

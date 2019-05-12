@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rio 200 Graus - AD2 Igor</title>
+		<base target="_blank" />
+		<link rel="stylesheet" type="text/css" href="Rio200graus.css" />
+	</head>
+	<body>
+		<header>
+			<address class="ender">
+				 Avenida Atacama, 200<br/>
+				 Tel: (21) 98765-4321<br/>
+				 <a href="mailto:contato@hotashell.com.br">
+				 contato@hotashell.com.br</a>
+			</address>
+		 	<img class="imgLogo" src="imagens/Rio200deitado.png"/><br/>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="Rio200graus2.html" target="_self">Inicial</a></li>
+				<li><a href="Tipos.html" target="_self">Tipos</a></li>
+				<li><a href="Estoque.html" target="_self">Estoque</a></li>
+				<li><a href="Cadastro.html" target="_self">Cadastro</a></li>
+				<li><a href="Compras.html" target="_self">Compras</a></li>
+			</ul>
+		</nav>
+		<section>
+			<script>
+				function checkNum(field,size) {
+					var i, c;
+					var inpTel = field.value;
+					if (inpTel.length != size) {
+						alert("Telefone " + field.name + " tem de ter " + size + " dígitos!");
+						return false;
+					}
+
+					for (i = 0; i < size; i++) {
+						c = inpTel.charAt(i);
+						if ((c<'0')||(c>'9')) {
+							alert("Telefone só pode ter dígitos, caracter " + c + " inválido!");
+							return false;
+						}
+					}
+						return true;
+				}
+			</script>
+			<h3>Cadastro</h3>
+			<form method="POST">
+				<fieldset>
+					<legend>Identificação</legend>
+					<div class='divLinha'>
+						<label for="idEmail" class="colPri">E-mail:</label>
+						<input id="idEmail" class="inpGrande" type="email" name="TxtEmail" required>
+					</div>
+					<div class='divLinha'>
+						<label for='idSenha' class='colPri'>Senha:</label>
+						<input id="idSenha" class="inpMedio" type="password" name="TxtSenha" required>
+						<label for='idConf' class='elemDir'>Confirme:
+						<input id="idConf" class="inpMedio" type="password" name="TxtConf" required>
+						</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Dados Pessoais</legend>
+						<div class='divLinha'>
+							<label for='nome' class='colPri'>Nome:</label>
+							<input type='text' id='nome' class='inpGrande' name="TxtNomeCompleto">
+						</div>
+						<div class='divLinha'>
+							<label for='endereco' class='colPri'>Endereço:</label>
+							<textarea name="TxtEnder" rows="2" class="inpGrande"></textarea>
+						</div>
+						<div class='divLinha'>
+							<label for='telefone' class='colPri'>Telefone:</label>
+							<input type='text' id='telefone' class='inpMedio' name="Fixo" onChange='checkNum(this,8);' required>
+							<label for='celular' class='elemDir'>Celular:
+							<input type='text' id='celular' class='inpMedio' name="Celular" onChange='checkNum(this,9);'></label>
+						</div>
+					<fieldset class='fsEsq'>
+						<legend>Nascimento</legend>
+						<input type='number' min='1' max='31' step='1' class='numDD'> / <input type='number' min='1' max='12' step='1' class='numDD'> / <input type='number' min='1920' max='2000' step='1' class='numQD'>
+					</fieldset>
+					<fieldset class='fsDir'>
+						<legend>Sexo:</legend>
+						<input type='radio' name='sexo' value='masc' checked>Masculino 
+						<input type="radio" name="sexo" value='fem'>Feminino
+					</fieldset>
+				</fieldset>
+				<div class='botoes'>
+					<input type='submit' value='Enviar'> <input type='reset' value='Limpar'>
+				</div>
+			</form>
+		</section>
+	</body>
+</html>

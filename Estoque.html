@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rio 200 Graus - AD2 Igor</title>
+		<base target="_blank" />
+		<link rel="stylesheet" type="text/css" href="Rio200graus.css" />
+	</head>
+	<body>
+		<header>
+			<address class="ender">
+				 Avenida Atacama, 200<br/>
+				 Tel: (21) 98765-4321<br/>
+				 <a href="mailto:contato@hotashell.com.br">
+				 contato@hotashell.com.br</a>
+			</address>
+		 	<img class="imgLogo" src="imagens/Rio200deitado.png"/><br/>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="Rio200graus2.html" target="_self">Inicial</a></li>
+				<li><a href="Tipos.html" target="_self">Tipos</a></li>
+				<li><a href="Estoque.html" target="_self">Estoque</a></li>
+				<li><a href="Cadastro.html" target="_self">Cadastro</a></li>
+				<li><a href="Compras.html" target="_self">Compras</a></li>
+			</ul>
+		</nav>
+		<section>
+		<script>
+			var tabEstoque = [["Vazio", "0"],
+			["FogaoBrastemp4b", "730"],
+			["FogaoElectrolux4b", "784"],
+			["FogaoBrastemp6b", "1.350"],
+			["FornoEletPhilco46L", "319"],
+			["FornoGasItajobi56L", "563"]];
+
+			function exibEst(ind){
+				var imagem = document.getElementById("imgEst");
+				var preco = document.getElementById("prxEst");
+
+				imagem.src = "imagens/" + tabEstoque[ind][0] + ".jpg";
+				preco.innerHTML = "R$ " + tabEstoque[ind][1] + ",00";
+				imagem.src.style.width = '200px';
+				imagem.src.style.length = '200px';
+			}
+		</script>
+			<br>
+			<table class="tabInfo">
+				<tr>
+					<th colspan='3' class='titulo'>Fogão & Forno</th>
+				</tr>
+				<tr class='linTH'>
+					<th>Tipo</th>
+					<th>Modelo</th>
+					<th>Imagem/Preço</th>
+				</tr>
+				<tr>
+					<th rowspan='3' class='colTH'>Fogão</th>
+					<td><a target='_self' href="javascript:exibEst(1);">Brastemp de piso 4 bocas</a></td>
+					<td rowspan='5'><img id="imgEst" src="imagens/Vazio.jpg" class="imgCell"><div id="prxEst" class="Estq">&nbsp;</div></td>
+				</tr>
+				<tr>
+					<td><a target='_self' href="javascript:exibEst(2);">Electrolux de piso 4 bocas</a></td>
+				</tr>
+				<tr>
+					<td><a target='_self' href="javascript:exibEst(3);">Brastemp de piso 6 bocas</a></td>
+				</tr>
+				<tr>
+					<th rowspan='2' class='colTH'>Forno</th>
+					<td><a target='_self' href='javascript:exibEst(4);'>Philco Elétrico 46L</a></td>
+				</tr>
+				<tr>
+					<td><a target='_self' href='javascript:exibEst(5);'>Itajobi à gás 56L</a></td>
+				</tr>
+			</table>
+			<br>
+			<br>
+		</section>
+	</body>
+</html>

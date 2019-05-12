@@ -1,0 +1,204 @@
+/*Estilo Geral*/
+	body {
+		background-color: #ffdd55; 
+		color: #ff1111;
+		font-size: 16px;
+		font-family:'Stoke','Verdana','Liberation';
+	}
+	a:link {
+		text-decoration: none;
+		color: #DD0000;
+	}
+	a:visited {
+		text-decoration: none;
+		color: #CC0000;
+	}
+	ol {
+		line-height: 200%;
+	}
+	ul {
+		line-height: 200%;
+		list-style-type: disc;
+	}
+/*Estilo Seções*/
+	header { 
+		display: block; 
+		margin-bottom: 1px; 
+	}
+	nav {
+		display: block; 
+		width: 150px; 
+		float: left;
+		margin-right: 10px;
+		font-weight: bold;
+		font-family:'Stoke','Verdana','Liberation';
+	}
+	section {
+		display: block; 
+		width: 76%; 
+		float: right; 
+	}
+/*Estilo Header*/
+	.ender{
+		text-align: right;
+		font-size: 15px;
+		font-style: italic;
+		line-height: 140%;
+		float: right;
+	}
+	img.imgLogo {
+		border-bottom: 3px solid;
+		margin-bottom: 6px;
+		padding-bottom: 15px;
+	}
+/*Estilo Nav*/
+	nav ul {
+		color: #883322;
+		line-height: 230%;
+		margin-top: 40px;
+	}
+/*Estilo Seção Apresentação*/
+	div.apres {
+		text-align: center;
+		font-size: 18px;
+	}
+/*Estilo Seção Tipos*/
+	.listaTipos {
+		color: #aa0000;
+		background-color: #eecc88;
+		padding: 10px 10px 10px 50px;
+		margin: 30px 10px 10px 10px;
+		border: 2px solid #000055;
+	}
+	.listaTipos ul{
+		color: #aa0000;
+		list-style-type: circle;
+	}
+/*Estilo Seção Estoque*/
+	.tabInfo {
+		background-color: #eecc88;
+		color: #000066;
+		border-collapse: collapse;
+		margin-top: 6px;
+		font-family: 'Arial', 'Ubuntu';
+	}
+	.tabInfo td, .tabInfo th {
+		border: 3px solid #226699;
+		padding: 6px 12px 6px 12px;
+	}
+	.tabInfo .titulo{
+		color: #ffff22;
+		background-color: #449977;
+		font-size: 24px;
+		text-align: center;
+		font-weight: bold;
+	}
+	.tabInfo .linTH {
+		color: #ffffff;
+		background-color: #33aa66;
+		vertical-align: middle;
+		text-align: center;
+	}
+	.tabInfo .colTH {
+		color: #ffffff;
+		background-color: #1188cc;
+		text-align: left;
+	}
+	.tabInfo .preco {
+		color: #ee0000;
+		font-weight: bold;
+		vertical-align: middle
+	}
+	.imgCell {
+		width: 200px;
+		height: 200px;
+		border: 3px solid #226699;
+	}
+/*Estilo Formulário Cadastro*/
+	fieldset {
+		margin: 20px 10px 0px 10px;
+	}
+	.fsEsq {
+		display: inline;
+		float: left;
+		margin: 0px;
+	}
+	.fsDir {
+		display: inline;
+		float: right;
+		margin: 0px;
+	}
+/*Elementos do Formulário*/
+	.botoes{
+		text-align: right;
+		margin: 20px 10px 0px 10px;
+	}
+	.divLinha {
+		width: 480px;
+		margin-bottom: 6px;
+	}
+	.colPri {
+		display: block;
+		float: left;
+		width: 90px;
+	}
+	.elemDir {
+		display: block;
+		float: right;
+	}
+/*Tamanho de Input*/
+	.inpGrande {
+		width: 370px;
+	}
+	.inpMedio {
+		width: 120px;
+	}
+	.numDD {
+		width: 30px;
+	}
+	.numQD {
+		width: 50px;
+	}
+/* Estilo Formulário Compras
+Fieldsets */
+	.fsEsqCompras {
+		float: left;
+		display: inline;
+	}
+	.fsDirCompras {
+		float: right;
+		display: inline;
+	}
+/*Tamanho de Input*/
+	.linhaCompras {
+		width: 500px;
+		margin-bottom:6px;
+	}
+	.colPriCompras {
+		float: left;
+		display: block;
+		width: 86px;
+	}
+	.inpEmail {
+		width: 200px;
+	}
+/*Estilo das Pop-up*/
+	.divPop {
+		text-align: center;
+	}
+	img.imgPop {
+		width: 160px;
+		height: 160px;
+		border: 3px solid;
+		padding: 12px;
+		background-color: #FFFFFF;
+		display: block;
+		margin: 0 auto;
+	}
+/*Estilo do Preço no Estoque*/
+   div.Estq {
+   	text-align: center;
+   	text-decoration: bold;
+   	color: #dd0000;
+   }
+  
